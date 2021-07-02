@@ -161,7 +161,7 @@ MonoBehaviour:
     m_Bits: 55
   m_GroundCheck: {fileID: 1876646019}
   m_CeilingCheck: {fileID: 1410247882}
-  jumpForce: 17
+  jumpForce: 19.04
   animator: {fileID: 490594030}
   OnLandEvent:
     m_PersistentCalls:
@@ -438,6 +438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacle: {fileID: 7713332196463795020, guid: 11bc7bbd9d8ce21418a559d36ef1cf98, type: 3}
+  checkpoint: {fileID: 715336593920631292, guid: f9696b578d750f246b60a43c7740dccc, type: 3}
   maxX: 3.5
   minX: 3
   maxY: -1.36
@@ -538,7 +539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c116b11097bba443be5248c5982a573, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraSpeed: 10
+  cameraSpeed: 5
 --- !u!4 &978094366
 Transform:
   m_ObjectHideFlags: 0
@@ -619,7 +620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78d8ff33d79243e4ebca5b15450b7f6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundSpeed: 0.2
+  groundSpeed: 0.3
   groundRenderer: {fileID: 1046480346}
 --- !u!23 &1046480346
 MeshRenderer:
@@ -764,7 +765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -918,8 +919,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.4363, y: 424}
-  m_SizeDelta: {x: 600, y: 200}
+  m_AnchoredPosition: {x: -9.4363, y: 182}
+  m_SizeDelta: {x: 400, y: 68.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1431623772
 MonoBehaviour:

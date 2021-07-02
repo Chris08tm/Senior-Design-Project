@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnObstacles : MonoBehaviour
 {
     public GameObject obstacle;
+    public GameObject checkpoint;
     public float maxX;
     public float minX;
     public float maxY;
@@ -18,24 +19,27 @@ public class SpawnObstacles : MonoBehaviour
         if(Time.time > spawnTime){
             Spawn();
             spawnTime = Time.time + timeBetweenSpawn;
-        }
+        }  
     }
 
     void Spawn()
     {
         float randomY;
         float randomX;
-        float randomVal = Random.Range(0, 10);
+        float randomVal = Random.Range(0, 12);
 
         if(randomVal >= 6){
             randomY = maxY;
-        }else{
+        }else {
             randomY = minY;
         }
         
         randomX = Random.Range(minX, maxX);
         
-
-        Instantiate(obstacle, transform.position + new Vector3(randomX, randomY, 0), transform.rotation);
+        if(((int)Score.score) % 11 != 0){
+            Instantiate(obstacle, transform.position + new Vector3(randomX, randomY, 0), transform.rotation);
+        }else{
+            Instantiate(checkpoint, transform.position + new Vector3(randomX, (float)(-.6), 0), transform.rotation);
+        }
     }
 }

@@ -5,7 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-    public void switchScene(){
+    public void switchSceneRun(){
+        Score.score = 1;
         SceneManager.LoadScene("Run");
+    }
+
+    public void switchSceneStart(){
+        Score.score = 1;
+        SceneManager.LoadScene("Main Menu");
     }
 }
